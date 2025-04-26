@@ -223,8 +223,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> 60d44003-3c49-4e04-bf39-8ab387f606c3
-    - !<reference> 4ed3d6e9-3cb8-4485-b9e7-0ff7e47f5818
+    - !<reference> b0f6e6ba-d56b-4f4a-9544-cbb5703c1f64
   Mesh: !<reference> 5e53772e-7f22-458f-ab53-8c84901396ba
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
@@ -636,7 +635,7 @@
   Layers: 1
   LocalTransform:
     position: {x: -4.000000, y: 0.000000, z: -1.000000}
-    rotation: {x: 37.000000, y: -0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 3.000000, y: 0.450000, z: 3.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -756,7 +755,7 @@
   Layers: 1
   LocalTransform:
     position: {x: -2.500000, y: 0.000000, z: 3.000000}
-    rotation: {x: 37.000000, y: -0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 3.000000, y: 0.450000, z: 3.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -810,8 +809,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> 60d44003-3c49-4e04-bf39-8ab387f606c3
-    - !<reference> 4ed3d6e9-3cb8-4485-b9e7-0ff7e47f5818
+    - !<reference> b0f6e6ba-d56b-4f4a-9544-cbb5703c1f64
   Mesh: !<reference> 5e53772e-7f22-458f-ab53-8c84901396ba
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
@@ -901,7 +899,7 @@
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: -4.000000}
-    rotation: {x: 37.000000, y: -0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 3.000000, y: 0.450000, z: 3.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -938,6 +936,22 @@
     []
   Components:
     - !<own> 084a1fd6-417e-417e-97b3-de6ca7fc5395
+- !<ScriptComponent/44fd1e24-4dcb-42d4-89d9-6408d2b16776>
+  PrefabRemaps:
+    []
+  Name: HandInputData
+  Enabled: true
+  ScriptAsset: !<reference> 504df461-525c-4e01-998c-da99c49dbcb1
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/48e8f0b3-8e23-4834-81c3-409f714711d1>
   PrefabRemaps:
     []
@@ -1328,8 +1342,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> 60d44003-3c49-4e04-bf39-8ab387f606c3
-    - !<reference> 4ed3d6e9-3cb8-4485-b9e7-0ff7e47f5818
+    - !<reference> b0f6e6ba-d56b-4f4a-9544-cbb5703c1f64
   Mesh: !<reference> 5e53772e-7f22-458f-ab53-8c84901396ba
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
@@ -1591,8 +1604,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> 60d44003-3c49-4e04-bf39-8ab387f606c3
-    - !<reference> 4ed3d6e9-3cb8-4485-b9e7-0ff7e47f5818
+    - !<reference> b0f6e6ba-d56b-4f4a-9544-cbb5703c1f64
   Mesh: !<reference> 5e53772e-7f22-458f-ab53-8c84901396ba
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
@@ -1804,7 +1816,7 @@
   Layers: 1
   LocalTransform:
     position: {x: 4.000000, y: 0.000000, z: -1.000000}
-    rotation: {x: 37.000000, y: -0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 3.000000, y: 0.450000, z: 3.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -1819,7 +1831,7 @@
   Layers: 1
   LocalTransform:
     position: {x: 2.500000, y: 0.000000, z: 3.000000}
-    rotation: {x: 37.000000, y: -0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 3.000000, y: 0.450000, z: 3.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -1914,7 +1926,8 @@
     - !<own> 30e1fa6a-3431-4f13-b668-1cc0c687f819
     - !<own> a0dbe8b9-73ff-4f79-9675-6a589f6a0830
   Components:
-    []
+    - !<own> 44fd1e24-4dcb-42d4-89d9-6408d2b16776
+    - !<own> d2471b44-944b-4f38-84c7-12995ab111dc
 - !<SceneObject/affea2ea-1a89-49cb-9eb9-9166c36b92fb>
   PrefabRemaps:
     []
@@ -1973,8 +1986,7 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> 60d44003-3c49-4e04-bf39-8ab387f606c3
-    - !<reference> 4ed3d6e9-3cb8-4485-b9e7-0ff7e47f5818
+    - !<reference> b0f6e6ba-d56b-4f4a-9544-cbb5703c1f64
   Mesh: !<reference> 5e53772e-7f22-458f-ab53-8c84901396ba
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
@@ -2386,6 +2398,26 @@
     - !<own> 9781b9fb-94c9-4160-aea5-c5c5aeadad13
   Components:
     []
+- !<ScriptComponent/d2471b44-944b-4f38-84c7-12995ab111dc>
+  PrefabRemaps:
+    []
+  Name: BtnsPos
+  Enabled: true
+  ScriptAsset: !<reference> 54c921d1-e160-414c-89ba-afd4cca95108
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      Btn0: !<reference.RenderMeshVisual> 8d10db2b-dee1-4771-9ba0-4cd2b9669de4
+      Btn1: !<reference.RenderMeshVisual> b2028b6a-1a9d-4bf9-a003-8a9d53274b6b
+      Btn2: !<reference.RenderMeshVisual> 369f708e-9ca1-4620-b13f-67af7fefb597
+      Btn3: !<reference.RenderMeshVisual> 70435623-0a31-4eaa-997e-46d40bab6bfe
+      Btn4: !<reference.RenderMeshVisual> 058b9286-2db8-4ecc-b118-58dc24de71fb
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/d5f8ba55-b744-473c-97e7-15857831ff63>
   PrefabRemaps:
     []

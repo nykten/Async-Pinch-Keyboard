@@ -17,7 +17,7 @@
   InstanceCount: 1
   Defines:
     []
-  BlendMode: Disabled
+  BlendMode: Screen
   Properties:
     Port_FinalColor_N004:
       typeIdx: 5
