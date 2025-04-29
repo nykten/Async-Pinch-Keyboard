@@ -49,13 +49,13 @@ export class BtnsPos extends BaseScriptComponent {
       
 
       // Add spawn callbacks for whenever these hands pinch.
-      leftHand.onPinchDown.add(() => {
+      rightHand.onPinchDown.add(() => {
         groupTransformObj.setWorldRotation(quat.fromEulerAngles(20 * Math.PI / 180, 0, 0)); // quat = quartenion
-        groupTransformObj.setWorldPosition(leftHand.indexTip.position);
+        groupTransformObj.setWorldPosition(rightHand.indexTip.position);
         groupTransformObj.setWorldScale(new vec3(1.0, 1.0, 1.0));
       });
 
-      leftHand.onPinchUp.add(() => {
+      rightHand.onPinchUp.add(() => {
         groupTransformObj.setWorldScale(new vec3(0.0, 0.0, 0.0));
       });
 
