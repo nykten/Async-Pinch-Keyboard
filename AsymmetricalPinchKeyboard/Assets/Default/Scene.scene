@@ -1,10 +1,9 @@
 - !<Scene/0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99>
   PackagePath: ""
   objects:
+    - !<own> 24ae476a-f3bd-4863-bfa1-8146bbb434d1
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> 0005641c-028d-459a-0000-000000014b4d
-    - !<own> bcccc17c-da60-47f5-96cd-ecae07632c1f
-    - !<own> 2f47d357-4bb4-415f-a651-058f510f4c94
     - !<own> affdc7de-183a-4270-939d-8389562bf3d5
     - !<own> bd73d332-264c-4acb-9a87-cc865d67b841
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
@@ -306,6 +305,7 @@
   Enabled: true
   ScriptAsset: !<reference> 4d0b0ec7-e669-4c4e-b2f7-32b9c59f24cc
   ScriptInputsDefault:
+    _drawDebug: true
     sphereCastEnabled: true
     spherecastRadii: true
     spherecastDistanceThresholds: true
@@ -321,7 +321,7 @@
     {}
   ScriptInputs:
     "":
-      _drawDebug: true
+      _drawDebug: false
       sphereCastEnabled: false
       spherecastRadii: !<float[]>
         - 0.500000
@@ -779,6 +779,23 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/24ae476a-f3bd-4863-bfa1-8146bbb434d1>
+  PrefabRemaps:
+    []
+  Name: Global
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> bcccc17c-da60-47f5-96cd-ecae07632c1f
+    - !<own> ff09c3d8-94ae-44eb-b095-cb2cd3531fa4
+    - !<own> 487853dd-ae53-43dc-82fa-eda9a8329829
+  Components:
+    []
 - !<SceneObject/26077a6b-4ef8-4f1d-8876-248ad3c04ff9>
   PrefabRemaps:
     []
@@ -960,7 +977,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 3.410398}
+    position: {x: 0.000000, y: 0.000000, z: -7.500000}
     rotation: {x: 20.000000, y: -0.000000, z: 0.000000}
     scale: {x: 3.000000, y: 0.450000, z: 3.000000}
     hasSegmentScaleCompensation: false
@@ -973,6 +990,7 @@
     - !<own> bcfed375-9b21-4b96-a8be-73895c66fd36
     - !<own> ce517497-b2dc-4840-95dd-4923347e93c5
     - !<own> e5a940eb-58c1-4737-9f23-efea71642bd7
+    - !<own> b3ab6228-e1b5-4d68-b532-b3230c338c4c
 - !<SceneObject/2ffbada3-52eb-471d-92eb-e76e303b08ee>
   PrefabRemaps:
     []
@@ -1231,7 +1249,7 @@
   PrefabRemaps:
     []
   Name: HandInputData
-  Enabled: true
+  Enabled: false
   ScriptAsset: !<reference> 504df461-525c-4e01-998c-da99c49dbcb1
   ScriptInputsDefault:
     {}
@@ -1243,6 +1261,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/487853dd-ae53-43dc-82fa-eda9a8329829>
+  PrefabRemaps:
+    []
+  Name: Hand Tracking
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a90e3d6c-a2a4-44b5-bf56-345ca209fa45
 - !<SceneObject/48e8f0b3-8e23-4834-81c3-409f714711d1>
   PrefabRemaps:
     []
@@ -1537,6 +1570,22 @@
     - !<own> 88c80051-d91b-487b-98fd-0da42b469a52
   Components:
     []
+- !<ScriptComponent/66b4dbdd-7fa0-40c4-9417-3fd706e2c276>
+  PrefabRemaps:
+    []
+  Name: LSQuickScripts
+  Enabled: true
+  ScriptAsset: !<reference> 69069c5a-2dc8-4938-8b0f-2dce18483712
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/66ee91b5-2528-4ee9-b5df-2904858c7558>
   PrefabRemaps:
     []
@@ -2233,6 +2282,7 @@
   Enabled: true
   ScriptAsset: !<reference> 4d0b0ec7-e669-4c4e-b2f7-32b9c59f24cc
   ScriptInputsDefault:
+    _drawDebug: true
     sphereCastEnabled: true
     spherecastRadii: true
     spherecastDistanceThresholds: true
@@ -2249,7 +2299,7 @@
     {}
   ScriptInputs:
     "":
-      _drawDebug: true
+      _drawDebug: false
       sphereCastEnabled: false
       spherecastRadii: !<float[]>
         - 0.500000
@@ -2372,6 +2422,41 @@
     - !<own> cd30addd-73e3-40fd-8dc0-60b5beb8d25b
   Components:
     []
+- !<ScriptComponent/a90e3d6c-a2a4-44b5-bf56-345ca209fa45>
+  PrefabRemaps:
+    []
+  Name: Hand Tracking
+  Enabled: true
+  ScriptAsset: !<reference> a7af2aaa-978e-4a8d-bcf9-a9a5c818f6f6
+  ScriptInputsDefault:
+    allowTap: true
+    allowTapDelivery: true
+    distFromCamera: true
+    hover: true
+    allowHandTracking: true
+    handLeft: true
+    handRight: true
+    stabilityFrames: true
+    allowSIK: true
+    syncCombined: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      allowTap: true
+      allowTapDelivery: false
+      cam: !<reference.Camera> 00000000-0000-0065-0000-000000000065
+      distFromCamera: !<float> 50.000000
+      hover: false
+      allowHandTracking: false
+      handLeft: !<reference.ObjectTracking3D> 00000000-0000-0000-0000-000000000000
+      handRight: !<reference.ObjectTracking3D> 00000000-0000-0000-0000-000000000000
+      stabilityFrames: 3
+      allowSIK: true
+      syncCombined: false
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/ad9aab3d-544c-42e9-b6d2-c41d49aae0d8>
   PrefabRemaps:
     []
@@ -2410,7 +2495,7 @@
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 7.410398}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    rotation: {x: 30.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -2502,6 +2587,22 @@
     - !<own> d5f8ba55-b744-473c-97e7-15857831ff63
   Components:
     []
+- !<ScriptComponent/b3ab6228-e1b5-4d68-b532-b3230c338c4c>
+  PrefabRemaps:
+    []
+  Name: HandTrackingTests
+  Enabled: false
+  ScriptAsset: !<reference> bfab1d39-9317-4613-bb3d-994e87f4b2d6
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      status: !<reference.RenderMeshVisual> 1ec32758-6b5b-4908-85d4-37971e765882
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/b455b979-8715-4b62-93d1-d8dca1b3897c>
   PrefabRemaps:
     []
@@ -2774,7 +2875,7 @@
 - !<SceneObject/bd73d332-264c-4acb-9a87-cc865d67b841>
   PrefabRemaps:
     []
-  Name: InteractionManager
+  Name: Input
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -2783,9 +2884,10 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
+    - !<own> 2f47d357-4bb4-415f-a651-058f510f4c94
     - !<own> 40ca04c8-6549-4663-935b-a7467412d74e
   Components:
-    []
+    - !<own> d166f025-2968-4885-ae93-6143f9808bd9
 - !<SceneObject/bf56bda9-d5ff-4b17-8bea-b0a80fc36ae3>
   PrefabRemaps:
     []
@@ -2997,11 +3099,32 @@
     - !<own> 9781b9fb-94c9-4160-aea5-c5c5aeadad13
   Components:
     []
+- !<ScriptComponent/d166f025-2968-4885-ae93-6143f9808bd9>
+  PrefabRemaps:
+    []
+  Name: InputMgr
+  Enabled: true
+  ScriptAsset: !<reference> 79525277-b532-4bf3-aef1-e64657649624
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      BtnHolder: !<reference.SceneObject> bd73d332-264c-4acb-9a87-cc865d67b841
+      Button1: !<reference.RenderMeshVisual> 8d10db2b-dee1-4771-9ba0-4cd2b9669de4
+      Button2: !<reference.RenderMeshVisual> b2028b6a-1a9d-4bf9-a003-8a9d53274b6b
+      Button3: !<reference.RenderMeshVisual> 369f708e-9ca1-4620-b13f-67af7fefb597
+      Button4: !<reference.RenderMeshVisual> 70435623-0a31-4eaa-997e-46d40bab6bfe
+      Button5: !<reference.RenderMeshVisual> 058b9286-2db8-4ecc-b118-58dc24de71fb
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/d2471b44-944b-4f38-84c7-12995ab111dc>
   PrefabRemaps:
     []
   Name: BtnsPos
-  Enabled: true
+  Enabled: false
   ScriptAsset: !<reference> 54c921d1-e160-414c-89ba-afd4cca95108
   ScriptInputsDefault:
     {}
@@ -3515,3 +3638,18 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/ff09c3d8-94ae-44eb-b095-cb2cd3531fa4>
+  PrefabRemaps:
+    []
+  Name: LSQuickScripts
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 66b4dbdd-7fa0-40c4-9417-3fd706e2c276

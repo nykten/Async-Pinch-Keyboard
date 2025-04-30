@@ -1,0 +1,48 @@
+- !<AssetImportMetadata/07de6643-8786-435f-8832-8c4c141781f4>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 79525277-b532-4bf3-aef1-e64657649624
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 79525277-b532-4bf3-aef1-e64657649624
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 98831717-1650-46e8-85cc-0a6c0d3fff8c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/98831717-1650-46e8-85cc-0a6c0d3fff8c>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: a3989703-6fee-40b0-9433-35e284790664
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    BtnHolder: false
+    Button1: false
+    Button2: false
+    Button3: false
+    Button4: false
+    Button5: false
+  ScriptTypesHidden:
+    {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - status: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      Button1: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      Button2: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      Button3: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      Button4: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      Button5: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      BtnHolder: !<reference.Transform> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
