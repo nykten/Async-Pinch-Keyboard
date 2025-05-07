@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PXR_ProjectSetting
   m_EditorClassIdentifier: 
   useContentProtect: 0
-  handTracking: 0
+  handTracking: 1
   openMRC: 1
   faceTracking: 0
   lipsyncTracking: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   bodyTracking: 0
   adaptiveResolution: 0
   stageMode: 0
-  videoSeeThrough: 0
+  videoSeeThrough: 1
   spatialAnchor: 0
   superResolution: 0
   normalSharpening: 0
