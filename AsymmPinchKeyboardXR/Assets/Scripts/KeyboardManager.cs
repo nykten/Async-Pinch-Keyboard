@@ -21,6 +21,8 @@ public class KeyboardManager : MonoBehaviour
     public GameObject sphere;
     public TextMeshPro sphereText;
 
+    Coroutine currentCoroutine;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,28 +36,40 @@ public class KeyboardManager : MonoBehaviour
     {
         if (leftTriggerBtn.action.WasPressedThisFrame()){
             leftCtrlrPos = leftControllerObj.transform.position;
+            StartCoroutine(SpawnAnimation(Vector3.zero, Vector3.one, growDuration));//play animation forward (grow)
         }
         if (leftTriggerBtn.action.IsPressed()){
             keyboard.transform.position = leftCtrlrPos;
-            StartCoroutine(SpawnAnimation(Vector3.zero, Vector3.one, growDuration));//play animation forward (grow)
             // keyboard.transform.localScale = new Vector3(1,1,1);
         }
         else {
             // keyboard.transform.localScale = Vector3.zero;
             StartCoroutine(SpawnAnimation(Vector3.one, Vector3.zero, growDuration));//play animation reverse (shrink)
         }
+
+        // if (leftTriggerBtn.action.IsPressed()) {
+        //     keyboard.transform.position = leftCtrlrPos;
+
+        //     if (currentCoroutine != null) StopCoroutine(currentCoroutine);
+        //     currentCoroutine = StartCoroutine(SpawnAnimation(Vector3.zero, Vector3.one, growDuration));
+        // }
+        // else {
+        //     if (currentCoroutine != null) StopCoroutine(currentCoroutine);
+        //     currentCoroutine = StartCoroutine(SpawnAnimation(Vector3.one, Vector3.zero, growDuration));
+        // }
     }
 
     IEnumerator SpawnAnimation(Vector3 startScale, Vector3 endScale, float duration) {
         float elapsed = 0f;
 
-        while (elapsed < growDuration) {
+        while (elapsed < duration) {
             transform.localScale = Vector3.Lerp(startScale, endScale, elapsed / duration);
             elapsed += Time.deltaTime;
             yield return null;
         }
 
         transform.localScale = endScale;
+        currentCoroutine = null; // ✅ Clear after finishing
     }
 
     // function ScratchPad() {
